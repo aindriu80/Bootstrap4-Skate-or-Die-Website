@@ -128,7 +128,7 @@
                         <img class="img-fluid imgCenter" src="resources/img/kickflip.jpg">
                         <div class="row">
                            <div class="col-sm-12">
-                            <button type="button" class="btn btn-danger btn-lrg btnCenter">Kickflip</button>
+                            <button type="button" class="btn btn-danger btn-lrg btnCenter" data-toggle="modal" data-target=".kf-modal-lg">Kickflip</button>
                             </div>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                         <img class="img-fluid imgCenter" src="resources/img/360flip.jpg">
                         <div class="row">
                            <div class="col-sm-12">
-                            <button type="button" class="btn btn-danger btn-lrg btnCenter">360 Flip</button>
+                            <button type="button" class="btn btn-danger btn-lrg btnCenter" data-toggle="modal" data-target=".360-modal-md">360 Flip</button>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                         <img class="img-fluid imgCenter" src="resources/img/bscrook.jpg">
                         <div class="row">
                            <div class="col-sm-12">
-                            <button type="button" class="btn btn-danger btn-lrg btnCenter">BS Crook</button>
+                            <button type="button" class="btn btn-danger btn-lrg btnCenter" data-toggle="modal" data-target=".bscrook-modal-sm">BS Crook</button>
                             </div>
                         </div>
                     </div>
@@ -197,6 +197,44 @@
         </div>
     </div>
 </div>
+
+
+<!-- Kickflip Modal -->
+ <div class="modal fade kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+        </div>
+        <p>Kickflips are easy.  Pop, flick, catch, land. #BOOM</p>
+    </div>    
+  </div>
+</div>
+
+<!-- 360 Modal -->
+ <div class="modal fade 360-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+        </div>
+        <p>360 are easy.  Pop, scissor kick, catch, land. #BOOM</p>
+    </div>    
+  </div>
+</div>
+
+<!-- BS Crook -->
+ <div class="modal fade bscrook-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ilzy0viqVes" allowfullscreen></iframe>
+        </div>
+        <p>Backside Crooks are sick! Nollie in nollie out! #BOOM</p>
+    </div>    
+  </div>
+</div>
+
 
 <!-- jQuery first, then popper, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
