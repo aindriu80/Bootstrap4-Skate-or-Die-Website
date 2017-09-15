@@ -15,7 +15,7 @@
 <body>
 <div class="container-fluid">
     <!-- page content -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">SKATE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,10 +26,10 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Videos</a>
+                    <a class="nav-link" href="#videos">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Photos</a>
+                    <a class="nav-link" href="#trophies">Trophies</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -92,8 +92,8 @@
     <!-- Section Two -->
     <div class="sectionDark">
         <div class="row">
-            <div class="col-sm-12 col-md-3 offset-md-2">                
-                <!-- <img class="img-fluid" src="resources/img/prodigy.png"> -->
+             <div class="col-sm-12 col-md-3 offset-md-2">                                
+                 <img class="img-fluid" src="resources/img/prodigy.png">
             </div>
 
             <div class="col-sm-12 col-md-6">
@@ -122,10 +122,11 @@
         </div>
     </div>
     
-    <div class="sectionLight">
+    <div class="sectionLight" id="videos">
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
+                   
                     <div class="col-sm-12 col-lg-4">
                         <img class="img-fluid imgCenter" src="resources/img/kickflip.jpg">
                         <div class="row">
@@ -150,27 +151,42 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <img class="img-fluid imgCenter" src="resources/img/no-comply.jpg">
+                        <div class="row">
+                           <div class="col-sm-12">
+                            <button type="button" class="btn btn-danger btn-lrg btnCenter" data-toggle="modal" data-target=".kf-modal-lg">Kickflip</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <img class="img-fluid imgCenter" src="resources/img/heel-flip.jpg">
+                        <div class="row">
+                           <div class="col-sm-12">
+                            <button type="button" class="btn btn-danger btn-lrg btnCenter" data-toggle="modal" data-target=".360-modal-md">360 Flip</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <img class="img-fluid imgCenter" src="resources/img/ollie-north.jpg">
+                        <div class="row">
+                           <div class="col-sm-12">
+                            <button type="button" class="btn btn-danger btn-lrg btnCenter" data-toggle="modal" data-target=".bscrook-modal-sm">BS Crook</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
     </div>
     
-    <!--Footer-->
-    <footer class="footer bg-dark">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-lg-3">
-                <img class="img-fluid footerImg" src="resources/img/KFS_LIGHT.png">
-            </div>
-            <div class="col-sm-12 col-lg-9 socialWrapper">
-               <a href="https://www.facebook.com/aindriu80" target="_blank">
-                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-                <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
-                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            </div>
-        </div>
+    <div class="sectionLight" id="trophies">
+        
     </div>
-</footer>
+    
+
     
     
     <!-- Modal -->
@@ -257,6 +273,22 @@
   </div>
 </div>
 
+    <!--Footer-->
+    <footer class="footer bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3">
+                <img class="img-fluid footerImg" src="resources/img/KFS_LIGHT.png">
+            </div>
+            <div class="col-sm-12 col-lg-9 socialWrapper">
+               <a href="https://www.facebook.com/aindriu80" target="_blank">
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <!-- jQuery first, then popper, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
