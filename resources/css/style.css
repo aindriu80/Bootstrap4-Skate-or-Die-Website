@@ -83,10 +83,8 @@ h5.modal-title{
 
 .card.signin-card {
   padding: 40px 0px 20px;
-  background-color:gray;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  background-color:white;
+  
 }
 
 img.signin-img {
@@ -113,20 +111,17 @@ a.create-new-account {
   display: block;
   margin-top: 15px;
 }
-
-
-
-
-
 .img-fluid2 {
     display: block;
     margin: auto;
     width: 40%;
 }
 
-
 .section-wrapper {    
     text-align: center;
 }
+
+
+
 
 
