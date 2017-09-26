@@ -347,7 +347,7 @@
                         </form>
                     </div>
                 </div>
-                <a href="#" class="create-new-account">Create New Account</a>
+                <a href="register.php" class="create-new-account">Create New Account</a>
             </div>
         </div>
     </div>
@@ -424,5 +424,8 @@
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/script.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
+    
+    <!-- php -->
+    <?php require_once "inc/footer.php"; ?>
 </body>
 </html>
