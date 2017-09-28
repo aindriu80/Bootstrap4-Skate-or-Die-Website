@@ -338,7 +338,8 @@
                             <div class="form-group">
                                 <input type="password" class="form-control" id="passwordInput" placeholder="Password">
                             </div>
-                            <button type="button" class="btn signin-btn btn-lg">Sign In</button>
+                            <button type="submit" class="btn signin-btn btn-lg">Sign In</button>
+<!--                            <button class="uk-button uk-button-default" type="submit">Login</button>-->
                             <div class="form-check">
                                 <label class="form-check-label">
                                     <input class="form-check-input" type="checkbox"> Remember me<a href="#"> Need Help?</a>
@@ -424,6 +425,7 @@
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/script.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
+
     
     <!-- php -->
     <?php require_once "inc/footer.php"; ?>
