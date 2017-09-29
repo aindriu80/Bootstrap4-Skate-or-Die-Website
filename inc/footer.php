@@ -6,4 +6,4 @@
 
 
 
-<script src="/resources/js/phpjavascript.js"></script>
+<script src="/Bootstrap4SkateorDieWebsite/resources/js/phpjavascript.js"></script>
