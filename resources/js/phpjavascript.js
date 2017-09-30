@@ -27,7 +27,7 @@ $(document)
 
 	$.ajax({
 		type: 'POST',
-		url: '/ajax/register.php',
+		url: 'Bootstrap4SkateorDieWebsite/ajax/register.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true,
@@ -36,14 +36,18 @@ $(document)
 		// Whatever data is 
 		console.log(data);
 		if(data.redirect !== undefined) {
-//			window.location = data.redirect;
+			window.location = data.redirect;
+		} else if(data.error !== undefined) {
+			_error
+				.text(data.error)
+				.show();
 		}
 
-		alert(data.name);
+		
 	})
 	.fail(function ajaxFailed(e) {
 		// This failed 
-		console.log(e);
+	
 	})
 	.always(function ajaxAlwaysDoThis(data) {
 		// Always do
