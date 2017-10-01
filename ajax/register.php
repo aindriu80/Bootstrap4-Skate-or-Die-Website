@@ -8,7 +8,7 @@
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		// Always return JSON format
-		header('Content-Type: application/json');
+		// header('Content-Type: application/json');
 
 		$return = [];
         $email = Filter::String( $_POST['email'] );
@@ -35,21 +35,16 @@
 
 			$user_id = $con->lastInsertId();
 
-			$_SESSION['user_id'] = (int) $user_id;
+			$_SESSION['user_id'] = (int) $user_id;		    
 
-		// Make sure the user CAN be added AND is added 
-
-		// Return the proper information back to JavaScrit to redirect us.
-
-//		$return['redirect'] = 'Bootstrap4SkateorDieWebsite/dashboard.php';        
-              $return['redirect'] = 'Bootstrap4SkateorDieWebsite/register.php?message=welcome';
+            $return['redirect'] = 'Bootstrap4SkateorDieWebsite/dashboard.php?message=welcome';
             $return['is_logged_in'] = true;
-//		      $return['name'] = "Kalob Taulien";
+
         }
 
 		echo json_encode($return, JSON_PRETTY_PRINT); exit;
 	} else {
 		// Die. Kill the script. Redirect the user. Do something regardless.
-		exit('test');
+		exit('Invalid URL');
 	}
 ?>
