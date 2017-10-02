@@ -5,6 +5,8 @@
 
 	// Require the config
 	require_once "../inc/config.php"; 
+    
+    ForceDashboard();
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		// Always return JSON format
