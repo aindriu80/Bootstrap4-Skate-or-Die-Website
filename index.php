@@ -54,7 +54,8 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ml-auto w-90 justify-content-end">
-                    <a class="nav-link" href="#registerLoginModal" onclick="myFunction();">Register / Login</a>
+<!--                    <a class="nav-link" href="#registerLoginModal" onclick="myFunction();">Register / Login</a>-->
+                    <a class="nav-link" href="register.php" onclick="myFunction();">Register / Login</a>
                 </ul>
             </div>
         </nav>
