@@ -27,7 +27,7 @@ $(document)
 
 	$.ajax({
 		type: 'POST',
-		url: '/ajax/register.php',
+		url: 'Bootstrap4SkateorDieWebsite/ajax/register.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true,
@@ -86,7 +86,7 @@ $(document)
 
 	$.ajax({
 		type: 'POST',
-		url: 'Bootstrap4SkateorDieWebsite/ajax/login.php',
+		url: '/ajax/login.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true,
