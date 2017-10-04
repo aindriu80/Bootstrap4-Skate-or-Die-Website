@@ -33,9 +33,9 @@
 
 			$user_id = $con->lastInsertId();
 
-			$_SESSION['user_id'] = (int) $user_id;		    
+			$_SESSION['user_id'] = (int) $user_id;
 
-            $return['redirect'] = 'Bootstrap4SkateorDieWebsite/dashboard.php?message=welcome';
+            $return['redirect'] = '/Bootstrap4SkateorDieWebsite/dashboard.php?message=welcome';
             $return['is_logged_in'] = true;
 
         }

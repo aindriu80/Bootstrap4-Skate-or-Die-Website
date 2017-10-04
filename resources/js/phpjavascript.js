@@ -27,27 +27,23 @@ $(document)
 
 	$.ajax({
 		type: 'POST',
-		url: 'Bootstrap4SkateorDieWebsite/ajax/register.php',
+		url: '/Bootstrap4SkateorDieWebsite/ajax/register.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true,
 	})
 	.done(function ajaxDone(data) {
 		// Whatever data is 
-		console.log(data);
 		if(data.redirect !== undefined) {
 			window.location = data.redirect;
 		} else if(data.error !== undefined) {
 			_error
-				.html(data.error)
+				.text(data.error)
 				.show();
 		}
-
-		
 	})
 	.fail(function ajaxFailed(e) {
 		// This failed 
-	
 	})
 	.always(function ajaxAlwaysDoThis(data) {
 		// Always do
@@ -56,8 +52,7 @@ $(document)
 
 	return false;
 })
-
-// Duplicated code from Register
+// 
 .on("submit", "form.js-login", function(event) {
 	event.preventDefault();
 
@@ -86,7 +81,7 @@ $(document)
 
 	$.ajax({
 		type: 'POST',
-		url: '/ajax/login.php',
+		url: 'Bootstrap4SkateorDieWebsite/ajax/login.php',
 		data: dataObj,
 		dataType: 'json',
 		async: true,
